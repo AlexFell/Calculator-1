@@ -1,0 +1,20 @@
+C:\Users\mrpro\Source\Repos\Calculator\1\bin\Debug\1.exe.config
+C:\Users\mrpro\Source\Repos\Calculator\1\bin\Debug\1.exe
+C:\Users\mrpro\Source\Repos\Calculator\1\bin\Debug\1.pdb
+C:\Users\mrpro\Source\Repos\Calculator\1\obj\Debug\Calculator.csprojAssemblyReference.cache
+C:\Users\mrpro\Source\Repos\Calculator\1\obj\Debug\_1.Form1.resources
+C:\Users\mrpro\Source\Repos\Calculator\1\obj\Debug\_1.Properties.Resources.resources
+C:\Users\mrpro\Source\Repos\Calculator\1\obj\Debug\Calculator.csproj.GenerateResource.cache
+C:\Users\mrpro\Source\Repos\Calculator\1\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+C:\Users\mrpro\Source\Repos\Calculator\1\obj\Debug\1.exe
+C:\Users\mrpro\Source\Repos\Calculator\1\obj\Debug\1.pdb
+C:\Games\Project Repos\Calculator\1\bin\Debug\1.exe.config
+C:\Games\Project Repos\Calculator\1\bin\Debug\1.exe
+C:\Games\Project Repos\Calculator\1\bin\Debug\1.pdb
+C:\Games\Project Repos\Calculator\1\obj\Debug\Calculator.csprojAssemblyReference.cache
+C:\Games\Project Repos\Calculator\1\obj\Debug\CalculatorApp.CalculatorForm.resources
+C:\Games\Project Repos\Calculator\1\obj\Debug\_1.Properties.Resources.resources
+C:\Games\Project Repos\Calculator\1\obj\Debug\Calculator.csproj.GenerateResource.cache
+C:\Games\Project Repos\Calculator\1\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+C:\Games\Project Repos\Calculator\1\obj\Debug\1.exe
+C:\Games\Project Repos\Calculator\1\obj\Debug\1.pdb
