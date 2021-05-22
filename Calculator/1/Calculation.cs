@@ -11,28 +11,28 @@ namespace CalculatorApp
         public const double PI = 3.1415926535897931;
         public const double E = 2.71828182846;
 
-        Dictionary<int, string> operators = new Dictionary<int, string>()
+        Dictionary<string, string> operators = new Dictionary<string, string>()
         {
-            {0, "e" },
-            {0, "π" },
-            {1, "√" },
-            {1, "ln" },
-            {1, "lg" },
-            {1, "cos" },
-            {1, "sin" },
-            {1, "tg" },
-            {1, "ctg" },
-            {1, "arcsin" },
-            {1, "arccos" },
-            {1, "arctg" },
-            {1, "arcctg" },
-            {2, "!" },
-            {2, "%" },
-            {3, "^" },
-            {4, "*" },
-            {4, "/" },
-            {5, "+" },
-            {5, "-" },
+            {"0", "e" },
+            {"0", "π" },
+            {"1", "√" },
+            {"1", "ln" },
+            {"1", "lg" },
+            {"1", "cos" },
+            {"1", "sin" },
+            {"1", "tg" },
+            {"1", "ctg" },
+            {"1", "arcsin" },
+            {"1", "arccos" },
+            {"1", "arctg" },
+            {"1", "arcctg" },
+            {"2", "!" },
+            {"2", "%" },
+            {"3", "^" },
+            {"4", "*" },
+            {"4", "/" },
+            {"5", "+" },
+            {"5", "-" },
         };
 
         public static long Fact(long operand)
@@ -54,22 +54,22 @@ namespace CalculatorApp
             {
                 for (int actualOperatorKey = 0 ; actualOperatorKey < 5; actualOperatorKey++)
                 {
-                    while (subString.Contains(operators[actualOperatorKey]))
+                    while (subString.Contains(operators[actualOperatorKey.ToString()]))
                     {
-                        int actualOperatorPosition = (actualOperatorKey < 2) ? subString.LastIndexOf(operators[actualOperatorKey]) : subString.IndexOf(operators[actualOperatorKey]);
-                        string operatorValue = operators[actualOperatorKey];
-                        foreach (KeyValuePair<int, string> pair in operators)
+                        int actualOperatorPosition = (actualOperatorKey < 2) ? subString.LastIndexOf(operators[actualOperatorKey.ToString()]) : subString.IndexOf(operators[actualOperatorKey.ToString()]);
+                        string operatorValue = operators[actualOperatorKey.ToString()];
+                        foreach (KeyValuePair<string, string> pair in operators)
                         {
                             if (actualOperatorKey < 2)
                             {
-                                if (actualOperatorPosition < subString.LastIndexOf(pair.Value) && pair.Key == actualOperatorKey)
+                                if (actualOperatorPosition < subString.LastIndexOf(pair.Value) && pair.Key == actualOperatorKey.ToString())
                                 {
                                     actualOperatorPosition = subString.LastIndexOf(pair.Value);
                                 }
                             }
                             else
                             {
-                                if (actualOperatorPosition > subString.IndexOf(pair.Value) && pair.Key == actualOperatorKey)
+                                if (actualOperatorPosition > subString.IndexOf(pair.Value) && pair.Key == actualOperatorKey.ToString())
                                 {
                                     actualOperatorPosition = subString.IndexOf(pair.Value);
                                     operatorValue = pair.Value;
@@ -88,15 +88,15 @@ namespace CalculatorApp
             int actualOperatorPosition = subString.Length;
             for (int actualOperatorKey = operatorKey; actualOperatorKey < 5; actualOperatorKey++)
             {
-                actualOperatorPosition = subString.IndexOf(operators[actualOperatorKey]);
-                string operatorValue = operators[actualOperatorKey];
-                foreach (KeyValuePair<int, string> pair in operators)
+                actualOperatorPosition = subString.IndexOf(operators[actualOperatorKey.ToString()]);
+                string operatorValue = operators[actualOperatorKey.ToString()];
+                foreach (KeyValuePair<string, string> pair in operators)
                 {
-                    if (actualOperatorPosition > subString.IndexOf(pair.Value) && pair.Key == actualOperatorKey && subString.IndexOf(pair.Value) > operatorPosition && operatorKey < 2)
+                    if (actualOperatorPosition > subString.IndexOf(pair.Value) && pair.Key == actualOperatorKey.ToString() && subString.IndexOf(pair.Value) > operatorPosition && operatorKey < 2)
                     {
                         actualOperatorPosition = subString.IndexOf(pair.Value);
                     }
-                    else if (actualOperatorPosition < subString.IndexOf(pair.Value) && pair.Key == actualOperatorKey && subString.IndexOf(pair.Value) < operatorPosition && operatorKey == 2)
+                    else if (actualOperatorPosition < subString.IndexOf(pair.Value) && pair.Key == actualOperatorKey.ToString() && subString.IndexOf(pair.Value) < operatorPosition && operatorKey == 2)
                     {
                         actualOperatorPosition = subString.IndexOf(pair.Value);
                     }
