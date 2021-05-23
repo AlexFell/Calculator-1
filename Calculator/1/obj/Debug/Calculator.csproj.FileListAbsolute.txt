@@ -18,3 +18,13 @@ C:\Games\Project Repos\Calculator\1\obj\Debug\Calculator.csproj.GenerateResource
 C:\Games\Project Repos\Calculator\1\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
 C:\Games\Project Repos\Calculator\1\obj\Debug\1.exe
 C:\Games\Project Repos\Calculator\1\obj\Debug\1.pdb
+D:\Calculator\1\bin\Debug\1.exe.config
+D:\Calculator\1\bin\Debug\1.exe
+D:\Calculator\1\bin\Debug\1.pdb
+D:\Calculator\1\obj\Debug\Calculator.csprojAssemblyReference.cache
+D:\Calculator\1\obj\Debug\CalculatorApp.CalculatorForm.resources
+D:\Calculator\1\obj\Debug\_1.Properties.Resources.resources
+D:\Calculator\1\obj\Debug\Calculator.csproj.GenerateResource.cache
+D:\Calculator\1\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+D:\Calculator\1\obj\Debug\1.exe
+D:\Calculator\1\obj\Debug\1.pdb
